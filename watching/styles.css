@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-image: url("https://static1.s123-cdn-static-a.com/uploads/7646174/400_640b912d2275d.png");
+background-size: cover;
+background-repeat: none;
+box-sizing: border-box;
+
+
+}
+
+header{
+display: flex;
+
+
+}
+
+/*Principio de Header */
+.contenedor {
+ 
+  animation: gradiente 5s ease-in-out infinite;
+background: linear-gradient(-45deg,
+rgba(170, 255, 0, 0.918),
+rgba(36, 153, 221, 0.301),
+rgba(0, 89, 255, 0.664));
+background-size: 350%;
+background-color: rgb(170, 255, 0);
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 21px;
+  padding: 66px;
+}
+
+@keyframes gradiente{
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+}
+
+
+.primer-div {
+display: flex;
+position: absolute;
+left: 73px;
+order: 1;
+}
+.primer-div img{
+width: 114px;
+}
+
+.segundo-div {
+display: flex;
+position: absolute;
+right: 24px;
+order: 2;
+}
+.segundo-div img{
+width:337px;
+
+}
+
+.tercer-div {
+display: flex;
+position: relative;
+order: 4;
+}
+.tercer-div img{
+width: 73px ;
+height: 50px;
+}
+
+nav{
+position: absolute;
+left: 20%;
+order: 3;
+}
+
+nav ul{
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+}
+nav ul li a{
+
+color:rgb(0, 81, 255) ;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 21px;
+font-weight: bolder;
+/*-webkit-text-stroke: 0.5px black;*/
+text-decoration: none;
+margin: 10px;
+padding: 10px;
+}
+
+nav ul li a:hover{
+color:white;
+}
+nav ul li a:active {
+color:black;
+}
+/*fin de header*/
+
+main{
+  display: flex;
+  width: 97%;
+  justify-content: center;
+  align-items: center;
+  margin: 21px;
+  padding: 20px 44px 66px 44px;
+}
+
+main h2{
+  text-align: center;
+  font-family:sans-serif;
+  font-weight: bolder;
+  font-size: 29px;
+
+}  
+
+main h2 a{
+  background-color: rgba(153, 205, 50, 0.849);
+  border: 6px solid white;
+  text-decoration: none;
+  padding: 4px 12px;
+  color: black;
+}
+
+main h2 a:hover{
+  color:white;
+}
+main h2 a:active {
+  color:rgb(83, 83, 83);
+} 
+
+main img{
+  display: flex;
+  width: 563px;
+  margin: -35px 30px 30px 30px;
+  border: 6px solid white;
+}
+
+@media(max-width:880px){
+
+  header{
+      width: 96%;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  header ul{
+      flex-direction: column;
+  }
+
+  nav{
+    position: absolute;
+    left: 30%;
+    order: 3;
+  }
+
+  main{
+    display: flex;
+    
+    width: 96%;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 21px 21px 21px;
+      
+  }
+  
+}
+
+@media(max-width:440px){
+
+  header{
+    display: flex;
+    width: 92%;
+    margin: 2px 0px 0px 6px
+  }
+
+  .primer-div {
+    display: flex;
+    position: absolute;
+    left: 26px;
+    order: 1;
+  }
+
+  .primer-div img{
+    width: 86px;
+  }
+  
+    .segundo-div {
+      display: flex;
+      position: absolute;
+      right: 9px;
+      order: 2;
+    }
+    .segundo-div img{
+      width:169px;
+    }
+  
+    nav{
+      position: absolute;
+      left: 22%;
+      order: 3;
+    }
+    
+    nav ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+    }
+    nav ul li a{
+    
+      color:rgb(0, 81, 255) ;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bolder;
+    /*-webkit-text-stroke: 0.5px black;*/
+      text-decoration: none;
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    
+
+    main{
+      display: flex;
+      
+      width: 97%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 21px 21px 21px;
+        
+    }
+
+    .fondo{
+      display: flex;
+      background-color: rgba(255, 255, 0, 0.781);
+      padding: 24px 5px 5px 5px;
+      width: 96%;
+      flex-wrap: wrap;
+    }
+    
+    main section h2{
+      display: flex;
+      margin-left: 139px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 23px;
+    }
+    
+    main section p{
+      text-align:justify;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      margin: 21px;
+    }
+    
+    main section p span{
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+}
+

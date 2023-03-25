@@ -157,6 +157,61 @@ main{
    /* -webkit-text-stroke: 1.25px black;
 }*/
 
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(0, 0, 0, 0.623);
+  margin-left: 21px;
+  width: 97%;
+  margin-top: 15px;
+  padding: 17px 67px 22px  47px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.footer_izquierda{
+  display: flex;
+  margin-top: 12px;
+}
+
+footer ul li {
+  color:white ;
+  font-family: Arial black, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: bolder;
+/*-webkit-text-stroke: 0.5px black;*/
+ 
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a{
+  color:white ;
+  font-family: Arial black, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+/*-webkit-text-stroke: 0.5px black;*/
+  text-decoration: none;
+  
+}
+
+footer ul li a:hover{
+  color: yellowgreen;
+}
+
+footer img{
+  display: flex;
+  width: 168px;
+  border: 5px;
+  margin-top: 16px;
+  background-color: white;
+}  
+
+/*fin footer */
+
+
 @media(max-width:880px){
 
   header{

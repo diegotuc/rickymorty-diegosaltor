@@ -147,9 +147,8 @@ footer{
   display: flex;
   justify-content: space-between;
   background-color:rgba(0, 0, 0, 0.623);
-  margin-left: 21px;
   width: 97%;
-  margin-top: 15px;
+  margin: 10px 21px 5px 21px;
   padding: 17px 67px 22px  47px;
   font-family: Arial, Helvetica, sans-serif;
   
@@ -194,9 +193,6 @@ footer img{
   margin-top: 16px;
   background-color: white;
 }  
-
-
-
 
 
 /*fin footer */
@@ -315,6 +311,32 @@ footer img{
       font-family: Arial, Helvetica, sans-serif;
       font-size: 23px;
     }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color:rgba(0, 0, 0, 0.623);
+      width: 93%;
+      margin: 10px 10px 22px 23px;
+      padding: 17px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .redes-sociales{
+    margin: -27px 10px 22px -76px;
+    
+  }
+
+    footer ul li a {
+      color: white;
+      font-family: Arial black, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bolder;
+      text-decoration: none;
+      margin: 12px 10px 10px 23px;
+  }
     
     main section p{
       text-align:justify;
@@ -328,8 +350,24 @@ footer img{
       font-weight: bolder;
     }
 
+    footer{
+      padding: 17px 10px;
+    }
+  
+    footer ul {
+      text-align: center;
+      margin: 12px 10px 10px 96px;
+    }
+  
+    footer img{
+    display: flex;
+    width: 168px;
+    border: 5px;
+    margin: 16px 16px 16px 29px;
+    background-color: white;
+    margin-right: 20px;
+}
 }
 
-  
 
 

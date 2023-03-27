@@ -108,62 +108,81 @@ color:black;
 /*fin de header*/
 
 main{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-  position: absolute;
-  padding: 50px;
-  left: 171px;
-  width: 79%;
-  top: 201px;
-  display: block;
-  justify-content:space-between;
+
+
+
+
+main section h2{
+  color: rgb(252, 193, 0);
+  text-shadow: 1px 1px 2px black;
+  background-color:  rgba(165, 247, 2, 0.548);
+  margin: 10px 21px 5px 314px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 52%;
   text-align: center;
+  font-size: 30px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 21px 0px 21px;
+}
+
+/*estilo para items de grid*/
+
+.grid-item{    
+  background-color:  rgba(165, 247, 2, 0.548);
+  margin: 10px 21px 5px 21px;
+  padding: 20px;
+  text-align: center;
+  width: 15%;
+  border-radius: 10%;
+  border: 2px solid black;
   
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-.fondo {
-    position: relative;
-    background-color: rgba(165, 247, 2, 0.548);
-    padding: 27px;
-    width: 263%;
-    left: -135px;
-    height: 268%;
-    top: -1px;
-    border: 5px solid black;
+.grid-item img{
+  width: 120px;
+  border-radius: 50%;
 }
 
+.grid-item h3{
+  color: rgb(252, 193, 0);
+  /* fuente de información:https://developer.mozilla.org/es/docs/Web/CSS/text-shadow*/
+  /*sintaxsis/
+   offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 2px black;
+}
 
-/*.personajes{
-    position: absolute;
-    padding: 50px;
-    /* left: 139px; */
-  /*  top:10px;
-    width: 59%;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    color: rgb(0, 23, 97);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}*/
+.grid-item p{
+  
+  color: rgb(252, 193, 0);
+  text-shadow: 1px 1px 2px black;
+  font-family: Arial black, Helvetica, sans-serif;
+  font-size: 15;
+  font-weight: bolder;
+}
 
-/*h2{
-    position: relative;
-    top: -58px;
-    color: rgb(255, 208, 0);
-    font-size: 36px;
-    /*funcion para dar un trazado a las letras o palabras*/
-   /* -webkit-text-stroke: 1.25px black;
-}*/
+.grid-item span{
+  text-shadow: 1px 1px 2px black;
+  color: white;
+  font-family: Arial black, Helvetica, sans-serif;
+  font-size: 15;
+  font-weight: bolder;
+}
 
 footer{
   display: flex;
   justify-content: space-between;
   background-color:rgba(0, 0, 0, 0.623);
-  margin-left: 21px;
   width: 97%;
-  margin-top: 15px;
+  margin: 10px 21px 5px 21px;
   padding: 17px 67px 22px  47px;
   font-family: Arial, Helvetica, sans-serif;
   
@@ -244,7 +263,7 @@ nav{
 
 @media(max-width:440px){
 
-   header{
+  header{
     display: flex;
     width: 92%;
     margin: 2px 0px 0px 6px
@@ -294,4 +313,118 @@ nav{
       margin: 10px;
       padding: 10px;
     }
+  
+    
+
+    main{
+      display: flex;
+      
+      width: 97%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 21px 21px 21px;
+        
+    }
+      
+
+     .grid-item{    
+      background-color:  rgba(165, 247, 2, 0.548);
+      margin: 10px 21px 5px 21px;
+      padding: 20px;
+      text-align: center;
+      width: 65%;
+      border-radius: 10%;
+      border: 2px solid black;
+      
+    }
+    
+    
+
+    main section h2{
+      display: flex;
+      margin-left: 139px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 23px;
+    }
+     
+  main section h2{
+    color: rgb(252, 193, 0);
+    text-shadow: 1px 1px 2px black;
+    background-color:  rgba(165, 247, 2, 0.548);
+    margin: 10px 21px 5px 92px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 56%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+    main section p{
+      text-align:justify;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      margin: 21px;
+    }
+    
+    main section p span{
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color:rgba(0, 0, 0, 0.623);
+      width: 93%;
+      margin: 10px 10px 22px 23px;
+      padding: 17px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .redes-sociales{
+    margin: -27px 10px 22px -76px;
+    
+  }
+
+    footer ul li a {
+      color: white;
+      font-family: Arial black, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bolder;
+      text-decoration: none;
+      margin: 12px 10px 10px 23px;
+  }
+    
+    main section p{
+      text-align:justify;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      margin: 21px;
+    }
+    
+    main section p span{
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    footer{
+      padding: 17px 10px;
+    }
+  
+    footer ul {
+      text-align: center;
+      margin: 12px 10px 10px 96px;
+    }
+  
+    footer img{
+    display: flex;
+    width: 168px;
+    border: 5px;
+    margin: 16px 16px 16px 29px;
+    background-color: white;
+    margin-right: 20px;
+}
 }

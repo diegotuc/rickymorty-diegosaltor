@@ -106,58 +106,47 @@ nav ul li a:active {
   color:black;
 }
 /*fin de header*/
-/*comienzo contenido principal biografía */
-main{
-  display: flex;
+/*comienzo contenido principal biografia */
+.container{
+  
   color: white;
   background-color:rgba(1, 74, 28, 0.726);
   margin-left: 21px;
   width: 97%;
   padding: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  /*flex-wrap: wrap; /* permite que las columnas se ajusten en caso de haber más contenido */
-  /*column-count: 3; /* define el número de columnas */
-  /*column-gap: 20px; /* espacio entre columnas */
 }
 
+.título{
+  text-align: center;
+  
+}
 
 .texto{
   display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
 }
-/*
-.texto h3 {
-  text-align: center; /* centrar el encabezado h3 */
-  /*margin-bottom: 10px; /* espacio entre el encabezado y el texto */
-/*}*/
-
-.texto ul {
-  margin-left: 29px; /* espacio a la izquierda de la lista */
-  margin-right: -8px;
-  margin-bottom: 10px; /* espacio entre las listas */
-}
-
-.texto ul li {
-  margin-bottom: 5px; /* espacio entre los elementos de la lista */
+.texto ul li{
   list-style: none;
-
-  text-align: center;
+  
 }
 
-main ul li p{
-  font-weight: bolder;
+.texto ul li p{
+  color: rgb(252, 193, 0);
+  font-size: 18px;
 }
 
-main h2{
-  text-align: center;
-}
+
+/*fin contenido principal biografia */
 
 footer{
   display: flex;
   justify-content: space-between;
   background-color:rgba(0, 0, 0, 0.623);
-  margin-left: 21px;
   width: 97%;
-  margin-top: 15px;
+  margin: 10px 21px 5px 21px;
   padding: 17px 67px 22px  47px;
   font-family: Arial, Helvetica, sans-serif;
   
@@ -203,9 +192,149 @@ footer img{
   background-color: white;
 }  
 
+/*fin footer */
+@media(max-width:880px){
+
+  header{
+      width: 96%;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  header ul{
+      flex-direction: column;
+  }
+
+  nav{
+    position: absolute;
+    left: 30%;
+    order: 3;
+  }
+
+  main{
+    display: flex;
+    
+    width: 96%;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 21px 21px 21px;
+      
+  }
+  
+}
+
+@media(max-width:440px){
+
+  header{
+    display: flex;
+    width: 92%;
+    margin: 2px 0px 0px 6px
+  }
+  .primer-div {
+    display: flex;
+    position: absolute;
+    left: 26px;
+    order: 1;
+  }
+  .primer-div img{
+    width: 86px;
+  }
+  .segundo-div {
+    display: flex;
+    position: absolute;
+    right: 9px;
+    order: 2;
+    }
+  .segundo-div img{
+      width:169px;
+    }
+    nav{
+      position: absolute;
+      left: 22%;
+      order: 3;
+    }
+    nav ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+    }
+    nav ul li a{
+    
+      color:rgb(0, 81, 255) ;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bolder;
+    /*-webkit-text-stroke: 0.5px black;*/
+      text-decoration: none;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .container{
+      
+      margin: 21px 0px 0px 9px;
+      width: 97%;
+      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .texto{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      
+    }
+      
+    .texto ul li p{
+      color: rgb(252, 193, 0);
+      font-size: 18px;
+    }
 
 
 
+    footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.623);
+    width: 93%;
+    margin: 10px 10px 22px 23px;
+    padding: 17px 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+  }
 
-/*fin contenido principal biografía */
+  .redes-sociales{
+    margin: -27px 10px 22px -76px;
+  }
+ footer ul li a {
+    color: white;
+    font-family: Arial black, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 12px 10px 10px 23px; 
+  }
+ footer{
+    padding: 17px 10px;
+  }
+  
+  footer ul {
+    text-align: center;
+    margin: 12px 10px 10px 96px;
+  }
+  footer img{
+    display: flex;
+    width: 168px;
+    border: 5px;
+    margin: 16px 16px 16px 29px;
+    background-color: white;
+    margin-right: 20px;
+}
+}
+
+
 

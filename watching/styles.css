@@ -295,33 +295,23 @@ footer img{
         margin: 0px 21px 21px 21px;
         
     }
+    main img{
+      display: flex;
+      width: 405px;
+      margin: -25px 30px 14px 22px;
+      border: 6px solid white;
+    }
 
-    .fondo{
-      display: flex;
-      background-color: rgba(255, 255, 0, 0.781);
-      padding: 24px 5px 5px 5px;
-      width: 96%;
-      flex-wrap: wrap;
-    }
-    
-    main section h2{
-      display: flex;
-      margin-left: 139px;
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 23px;
-    }
-    
-    main section p{
-      text-align:justify;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      margin: 21px;
-    }
-    
-    main section p span{
-      margin-top: 5px;
-      font-weight: bolder;
+    main h2 a{
+      display: flex; 
+      width:89%;
+      background-color: rgba(153, 205, 50, 0.849);
+      border: 6px solid white;
+      text-decoration: none;
+      
+      margin:  10px 10px -67px 20px;
+      padding: 15px 0px 15px 101px;
+      color: black;
     }
 
     footer {
@@ -341,6 +331,11 @@ footer img{
     
   }
 
+  footer ul {
+    text-align: center;
+    margin:7px 10px 10px 21px;
+  }
+
     footer ul li a {
       color: white;
       font-family: Arial black, Helvetica, sans-serif;
@@ -349,27 +344,19 @@ footer img{
       text-decoration: none;
       margin: 12px 10px 10px 23px;
   }
-    
-    main section p{
-      text-align:justify;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      margin: 21px;
-    }
-    
-    main section p span{
-      margin-top: 5px;
-      font-weight: bolder;
-    }
+   
+  footer ul li a:hover{
+    color: yellowgreen;
+  }
 
-    footer{
-      padding: 17px 10px;
-    }
+  .footer_izquierda{
+    display: flex;
   
-    footer ul {
-      text-align: center;
-      margin: 12px 10px 10px 96px;
-    }
+    margin:  12px 39px -10px 9px;
+  }
+   
+  
+    
   
     footer img{
     display: flex;
@@ -377,9 +364,9 @@ footer img{
     border: 5px;
     margin: 16px 16px 16px 29px;
     background-color: white;
-    margin-right: 20px;
+
 }
 }
 
-}
+
 

@@ -189,7 +189,7 @@ background-color: white;
 
 
 
-@media(max-width:527px){
+@media(max-width:440px){
   .contenedor {
     margin: 21px 10px 21px 27px;
     padding: 66px;
@@ -198,18 +198,22 @@ background-color: white;
   .primer-div {
     display: flex;
     position: absolute;
-    left: 36px;
+    left: 30px;
     order: 1;
     }  
     
+    .primer-div img {
+      width: 97px;
+  }
+
     .segundo-div {
     display: flex;
     position: absolute;
-    right: 24px;
+    right: 11px;
     order: 2;
     }
     .segundo-div img{
-    width:188px;
+    width:158px;
     }
     
     nav{
@@ -223,13 +227,14 @@ background-color: white;
     justify-content: center;
     align-items: center;
     list-style: none;
+    gap: 10px;
     }
 
     nav ul li a{
 
       color:rgb(0, 81, 255) ;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bolder;
       /*-webkit-text-stroke: 0.5px black;*/
       text-decoration: none;
@@ -259,8 +264,9 @@ background-color: white;
 
     footer ul li {
       color: white;
+      margin: 0px -5px 4px 0px;
       font-family: Arial black, Helvetica, sans-serif;
-      font-size: 17px;
+      font-size: 14px;
       font-weight: bolder;
       /* -webkit-text-stroke: 0.5px black; */
   }
@@ -268,14 +274,14 @@ background-color: white;
   footer ul li a {
     color: white;
     font-family: Arial black, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bolder;
     /* -webkit-text-stroke: 0.5px black; */
     text-decoration: none;
 }
 
   footer img{
-    margin:  31px 16px 16px 140px;
+    margin:  31px 16px 16px 102px;
   }  
     
     
@@ -283,142 +289,5 @@ background-color: white;
  
 }
 
-@media(max-width:440px){
-
-header{
-  display: flex;
-  width: 92%;
-  margin: 2px 0px 0px 6px
-}
-
-.primer-div {
-  display: flex;
-  position: absolute;
-  left: 26px;
-  order: 1;
-}
-
-.primer-div img{
-  width: 86px;
-}
-
-  .segundo-div {
-    display: flex;
-    position: absolute;
-    right: 9px;
-    order: 2;
-  }
-  .segundo-div img{
-    width:169px;
-  }
-
-  nav{
-    position: absolute;
-    left: 22%;
-    order: 3;
-  }
-  
-  nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-  }
-  nav ul li a{
-  
-    color:rgb(0, 81, 255) ;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bolder;
-  /*-webkit-text-stroke: 0.5px black;*/
-    text-decoration: none;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  
-
-  main{
-    display: flex;
-    
-    width: 97%;
-      justify-content: center;
-      align-items: center;
-      margin: 0px 21px 21px 21px;
-      
-  }
-
-  .fondo{
-    display: flex;
-    background-color: rgba(255, 255, 0, 0.781);
-    padding: 24px 5px 5px 5px;
-    width: 96%;
-    flex-wrap: wrap;
-  }
-  
-  main section h2{
-    display: flex;
-    margin-left: 139px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 23px;
-  }
-
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color:rgba(0, 0, 0, 0.623);
-    width: 93%;
-    margin: 10px 10px 22px 23px;
-    padding: 17px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.redes-sociales{
-  margin: -27px 10px 22px -76px;
-  
-}
-
-  footer ul li a {
-    color: white;
-    font-family: Arial black, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bolder;
-    text-decoration: none;
-    margin: 12px 10px 10px 23px;
-}
-  
-  main section p{
-    text-align:justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin: 21px;
-  }
-  
-  main section p span{
-    margin-top: 5px;
-    font-weight: bolder;
-  }
-
-  footer{
-    padding: 17px 10px;
-  }
-
-  footer ul {
-    text-align: center;
-    margin: 12px 10px 10px 96px;
-  }
-
-  footer img{
-  display: flex;
-  width: 168px;
-  border: 5px;
-  margin: 16px 16px 16px 29px;
-  background-color: white;
-  margin-right: 20px;
-}
-}
 
 

@@ -1,0 +1,556 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-image: url("/img/rick-y-morty-en-el-espacio-6046.jpg");
+background-size: cover;
+background-repeat: none;
+box-sizing: border-box;
+}
+
+header{
+display: flex;
+}
+
+/*Principio de Header */
+.contenedor {
+animation: gradiente 5s ease-in-out infinite;
+background: linear-gradient(-45deg,
+rgba(170, 255, 0, 0.918),
+rgba(36, 153, 221, 0.301),
+rgba(0, 89, 255, 0.664));
+background-size: 350%;
+background-color: rgb(170, 255, 0);
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+margin: 21px;
+padding: 66px;
+}
+
+@keyframes gradiente{
+0% {background-position: 0% 50%;}
+50% {background-position: 100% 50%;}
+}
+
+
+.primer-div {
+display: flex;
+position: absolute;
+left: 73px;
+order: 1;
+}
+.primer-div img{
+width: 114px;
+}
+.segundo-div {
+display: flex;
+position: absolute;
+right: 24px;
+order: 2;
+}
+.segundo-div img{
+width:337px;
+}
+nav{
+position: absolute;
+left: 20%;
+}
+nav ul{
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+}
+nav ul li a{
+color:rgb(0, 81, 255) ;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 21px;
+font-weight: bolder;
+/*-webkit-text-stroke: 0.5px black;*/
+text-decoration: none;
+margin: 10px;
+padding: 10px;
+}
+nav ul li a:hover{
+color:white;
+}
+nav ul li a:active {
+color:black;
+}
+/*fin de header*/
+
+/*comienzo sección sinopsis */
+.sinopsis{
+display: flex;
+width: 97%;
+justify-content: center;
+align-items: center;
+margin: 0px 21px 21px 21px;
+}
+.fondo{
+background-color: rgba(255, 255, 0, 0.781);
+padding: 24px 5px 5px 5px;
+margin-bottom: 23px;
+}
+.h2_sinopsis{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 34px;
+}
+.p_sinopsis{
+text-align:justify;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+margin: 29px;
+}
+.span-sinopsis{
+margin-top: 5px;
+font-weight: bolder;
+}
+/*fin sección sinopsis */
+
+/*comienzo sección personajes*/
+.personajes{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h2-personajes{
+color: rgb(252, 193, 0);
+text-shadow: 1px 1px 2px black;
+background-color:  rgba(165, 247, 2, 0.548);
+margin: 10px 21px 26px 314px;
+padding: 20px;
+border-radius: 10px;
+width: 52%;
+text-align: center;
+font-size: 30px;
+}
+.container-personajes{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0px 21px 0px 21px;
+}
+/*fin de estilos para sección sinópsis*/
+
+/*inicio de estilos para sección personajes*/
+
+/*en la clase .grid-items se establece el tamaño y color del fondo del espacio donde irá la imagen y la información de los personajes de la serie de rick y morty*/
+.grid-item{    
+background-color:  rgba(165, 247, 2, 0.548);
+margin: 10px 21px 5px 21px;
+padding: 20px;
+text-align: center;
+width: 15%;
+border-radius: 10%;
+border: 2px solid black;
+}
+.grid-item img{
+width: 120px;
+border-radius: 50%;
+}
+.grid-item h3{
+color: rgb(252, 193, 0);
+/* fuente de información:https://developer.mozilla.org/es/docs/Web/CSS/text-shadow*/
+
+/*sintaxsis: text-shadow: offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 2px black;
+}
+  
+.grid-item p{
+color: rgb(252, 193, 0);
+text-shadow: 1px 1px 2px black;
+font-family: Arial black, Helvetica, sans-serif;
+font-size: 15;
+font-weight: bolder;
+}
+  
+.grid-item span{
+text-shadow: 1px 1px 2px black;
+color: white;
+font-family: Arial black, Helvetica, sans-serif;
+font-size: 15;
+font-weight: bolder;
+}
+
+/*fin de estilos para sección personajes*/
+
+/*inicio de estilos para sección ver serie*/
+
+.ver-serie{
+display: flex;
+flex-direction: column;
+width: 97%;  
+justify-content: center;
+align-items: center;
+margin: 21px 21px 57px 21px;
+}
+.ver-serie h2{
+text-align: center;
+font-family:sans-serif;
+font-weight: bolder;
+font-size: 42px;
+}  
+.ver-serie h2 a{
+background-color: rgba(153, 205, 50, 0.849);
+border: 6px solid white;
+text-decoration: none;
+padding: 4px 12px;
+color: black;
+}
+.ver-serie h2 a:hover{
+color:white;
+}
+.ver-serie h2 a:active {
+color:rgb(83, 83, 83);
+} 
+.ver-serie img{
+display: flex;
+width: 738px;
+margin: 16px 0 30px 0;
+border: 6px solid white;
+}
+/*fin de estilos para sección ver series*/
+
+/*inicio de estilos para sección biografía*/
+.container-biografia{
+color: white;
+background-color:rgba(1, 74, 28, 0.726);
+margin-left: 21px;
+width: 97%;
+padding: 24px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.título{
+text-align: center;
+}
+
+.texto{
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+.texto ul li{
+list-style: none;
+}
+
+.texto ul li p{
+color: rgb(252, 193, 0);
+font-size: 18px;
+}
+/*fin de estilos para sección biografía*/
+
+/*inicio de estilos para sección footer*/
+footer{
+display: flex;
+justify-content: space-between;
+background-color:rgba(0, 0, 0, 0.623);
+width: 97%;
+margin: 10px 21px 5px 21px;
+padding: 17px 67px 22px  47px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.footer_izquierda{
+display: flex;
+margin-top: 12px;
+}
+footer ul li {
+color:white ;
+font-family: Arial black, Helvetica, sans-serif;
+font-size: 19px;
+font-weight: bolder;
+/*-webkit-text-stroke: 0.5px black;*/
+}
+footer ul {
+list-style: none;
+}
+footer ul li a{
+color:white ;
+font-family: Arial black, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: bolder;
+/*-webkit-text-stroke: 0.5px black;*/
+text-decoration: none;
+}
+footer ul li a:hover{
+color: yellowgreen;
+}
+footer img{
+display: flex;
+width: 168px;
+border: 5px;
+margin-top: 16px;
+background-color: white;
+}  
+/*fin de estilos para sección footer*/
+
+@media(max-width:880px){
+  /*inicio de estilos del header*/
+  .contenedor {
+    margin: 0px 0px 20px 0;
+    padding: 66px 66px 66px 66px;
+  }
+  
+  .primer-div {
+    display: flex;
+    position: absolute;
+    left: 8px;
+    order: 1;
+  }  
+      
+  .primer-div img {
+    width: 104px;
+  }
+  
+  .segundo-div {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    order: 2;
+  }
+  .segundo-div img{
+    width:180px;
+  }
+      
+  nav{
+    position: absolute;
+    left: 17%;
+  }    
+        
+nav ul{
+margin: 0 0 0 -61px;
+}
+  
+  nav ul li a{
+    color:rgb(0, 81, 255) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.20px;
+    font-weight: bolder;
+    /*-webkit-text-stroke: 0.5px black;*/
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;  
+  } 
+  /*fin de estilos del header*/
+  /*inicio sección estilos sinopsis*/
+  .sinopsis{
+    display: flex;
+    width: 97%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 21px 21px 12px;
+  }
+  .fondo{
+    width: 92%;
+    margin: 0px 0px 0px 7px;
+    padding: 24px 14px 5px 5px;
+  }
+  /*fin estilos sección sinopsis*/
+  
+  /*inicio estilos sección personajes*/
+  .h2-personajes {
+    margin: 10px 21px 26px 177px;
+    padding: 16px 16px 16px 16px;
+    width: 59%;
+  }
+  .grid-item {
+    width: 26%;
+  }
+  
+  /*fin estilos sección personajes*/
+  
+  /*inicio estilos sección ver imágenes*/
+  .ver-serie img {
+    width: 529px;
+    margin: 16px 17px 30px 0;  
+  }
+  .ver-serie h2 {
+    font-size: 30px;
+  }
+  
+  /*fin estilos sección ver imagenes*/
+  
+  /*inicio estilos sección biografía*/
+  
+  .container-biografia {
+    width: 91%;
+  }
+  /*fin estilos sección biografía*/
+  
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:rgba(0, 0, 0, 0.623);
+    width: 92%;
+    margin: 10px 21px 29px 28px;
+    padding: 17px 16px 22px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+  footer ul li {
+    color: white;
+    margin: 0px -5px 4px -42px;
+    font-family: Arial black, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    /* -webkit-text-stroke: 0.5px black; */
+  }
+  
+  footer ul li a {
+    color: white;
+    font-family: Arial black, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    /* -webkit-text-stroke: 0.5px black; */
+    text-decoration: none;
+  }
+  
+  footer img{
+   margin: 19px 26px 16px 31px
+  }  
+  }
+
+@media(max-width:440px){
+/*inicio de estilos del header*/
+.contenedor {
+  margin: 0px 0px 20px 0;
+  padding: 66px 66px 66px 66px;
+}
+
+.primer-div {
+  display: flex;
+  position: absolute;
+  left: 8px;
+  order: 1;
+}  
+    
+.primer-div img {
+  width: 87px;
+}
+
+.segundo-div {
+  display: flex;
+  position: absolute;
+  right: 11px;
+  order: 2;
+}
+.segundo-div img{
+  width:165px;
+}
+    
+nav{
+  position: absolute;
+  left: 17%;
+}    
+      
+nav ul{
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  }
+
+nav ul li a{
+  color:rgb(0, 81, 255) ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  /*-webkit-text-stroke: 0.5px black;*/
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;  
+} 
+/*fin de estilos del header*/
+/*inicio sección estilos sinopsis*/
+.sinopsis{
+  display: flex;
+  width: 97%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 21px 21px 12px;
+}
+.fondo{
+  width: 92%;
+  margin: 0px 0px 0px 7px;
+  padding: 24px 14px 5px 5px;
+}
+/*fin estilos sección sinopsis*/
+
+/*inicio estilos sección personajes*/
+.h2-personajes {
+  margin: 10px 21px 26px 91px;
+  padding: 16px 16px 16px 16px;
+  width: 59%;
+}
+.grid-item {
+  width: 65%;
+}
+
+/*fin estilos sección personajes*/
+
+/*inicio estilos sección ver imágenes*/
+.ver-serie img {
+  width: 388px;
+  margin: 16px 17px 30px 0;  
+}
+.ver-serie h2 {
+  font-size: 30px;
+}
+
+/*fin estilos sección ver imagenes*/
+
+/*inicio estilos sección biografía*/
+
+.container-biografia {
+  width: 91%;
+}
+.texto {
+   flex-wrap: wrap;
+}
+/*fin estilos sección biografía*/
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:rgba(0, 0, 0, 0.623);
+  width: 92%;
+  margin: 10px 21px 29px 28px;
+  padding: 17px 16px 22px 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+footer ul li {
+  color: white;
+  margin: 0px -5px 4px -42px;
+  font-family: Arial black, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+  /* -webkit-text-stroke: 0.5px black; */
+}
+
+footer ul li a {
+  color: white;
+  font-family: Arial black, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  /* -webkit-text-stroke: 0.5px black; */
+  text-decoration: none;
+}
+
+footer img{
+  margin:  31px 16px 16px 57px;
+}  
+}
+
+
+

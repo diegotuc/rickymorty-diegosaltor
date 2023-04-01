@@ -5,18 +5,22 @@
 }
 
 body{
-background-image: url("/img/rick-y-morty-en-el-espacio-6046.jpg");
-background-size: cover;
-background-repeat: none;
-box-sizing: border-box;
+  background-image: url("/img/rick-y-morty-en-el-espacio_3840x2160_xtrafondos.com.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  
 }
+
+
 
 header{
 display: flex;
+
 }
 
 /*Principio de Header */
 .contenedor {
+
 animation: gradiente 5s ease-in-out infinite;
 background: linear-gradient(-45deg,
 rgba(170, 255, 0, 0.918),
@@ -83,6 +87,8 @@ nav ul li a:active {
 color:black;
 }
 /*fin de header*/
+
+
 
 /*comienzo sección sinopsis */
 .sinopsis{
@@ -416,6 +422,10 @@ margin: 0 0 0 -61px;
   }  
   }
 
+@media(max-width:630px){
+
+} 
+
 @media(max-width:440px){
 /*inicio de estilos del header*/
 .contenedor {
@@ -437,11 +447,11 @@ margin: 0 0 0 -61px;
 .segundo-div {
   display: flex;
   position: absolute;
-  right: 11px;
+  right: 10px;
   order: 2;
 }
 .segundo-div img{
-  width:165px;
+  width:161px;
 }
     
 nav{
@@ -459,14 +469,9 @@ nav ul{
   }
 
 nav ul li a{
-  color:rgb(0, 81, 255) ;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: bolder;
-  /*-webkit-text-stroke: 0.5px black;*/
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px;  
+  
+  font-size: 12px;
+  
 } 
 /*fin de estilos del header*/
 /*inicio sección estilos sinopsis*/
@@ -479,16 +484,16 @@ nav ul li a{
 }
 .fondo{
   width: 92%;
-  margin: 0px 0px 0px 7px;
+  margin: 0px 18px 0px 7px;
   padding: 24px 14px 5px 5px;
 }
 /*fin estilos sección sinopsis*/
 
 /*inicio estilos sección personajes*/
 .h2-personajes {
-  margin: 10px 21px 26px 91px;
+  margin: 10px 21px 13px 63px;
   padding: 16px 16px 16px 16px;
-  width: 59%;
+  width: 69%;
 }
 .grid-item {
   width: 65%;
@@ -498,11 +503,12 @@ nav ul li a{
 
 /*inicio estilos sección ver imágenes*/
 .ver-serie img {
-  width: 388px;
-  margin: 16px 17px 30px 0;  
+  width: 322px;
+  margin: 16px 27px 30px 0;  
 }
 .ver-serie h2 {
-  font-size: 30px;
+  font-size: 28px;
+  margin: 4px 27px -7px 0;
 }
 
 /*fin estilos sección ver imagenes*/
@@ -522,11 +528,15 @@ footer{
   flex-wrap: wrap;
   justify-content: space-between;
   background-color:rgba(0, 0, 0, 0.623);
-  width: 92%;
+  width: 100%;
   margin: 10px 21px 29px 28px;
   padding: 17px 16px 22px 27px;
   font-family: Arial, Helvetica, sans-serif;
   
+}
+
+.footer_izquierda{
+   margin: 11px 8px 0 6px;
 }
 
 footer ul li {
@@ -541,10 +551,14 @@ footer ul li {
 footer ul li a {
   color: white;
   font-family: Arial black, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bolder;
   /* -webkit-text-stroke: 0.5px black; */
   text-decoration: none;
+}
+
+.autor{
+  margin: 0 30px 0 0;
 }
 
 footer img{

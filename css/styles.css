@@ -8,6 +8,7 @@ body{
   background-image: url("/img/rick-y-morty-en-el-espacio_3840x2160_xtrafondos.com.jpg");
   background-size:cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   
 }
 
@@ -294,137 +295,8 @@ background-color: white;
 }  
 /*fin de estilos para sección footer*/
 
-@media(max-width:880px){
-  /*inicio de estilos del header*/
-  .contenedor {
-    margin: 0px 0px 20px 0;
-    padding: 66px 66px 66px 66px;
-  }
-  
-  .primer-div {
-    display: flex;
-    position: absolute;
-    left: 8px;
-    order: 1;
-  }  
-      
-  .primer-div img {
-    width: 104px;
-  }
-  
-  .segundo-div {
-    display: flex;
-    position: absolute;
-    right: 24px;
-    order: 2;
-  }
-  .segundo-div img{
-    width:180px;
-  }
-      
-  nav{
-    position: absolute;
-    left: 17%;
-  }    
-        
-nav ul{
-margin: 0 0 0 -61px;
-}
-  
-  nav ul li a{
-    color:rgb(0, 81, 255) ;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17.20px;
-    font-weight: bolder;
-    /*-webkit-text-stroke: 0.5px black;*/
-    text-decoration: none;
-    margin: 10px;
-    padding: 10px;  
-  } 
-  /*fin de estilos del header*/
-  /*inicio sección estilos sinopsis*/
-  .sinopsis{
-    display: flex;
-    width: 97%;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 21px 21px 12px;
-  }
-  .fondo{
-    width: 92%;
-    margin: 0px 0px 0px 7px;
-    padding: 24px 14px 5px 5px;
-  }
-  /*fin estilos sección sinopsis*/
-  
-  /*inicio estilos sección personajes*/
-  .h2-personajes {
-    margin: 10px 21px 26px 177px;
-    padding: 16px 16px 16px 16px;
-    width: 59%;
-  }
-  .grid-item {
-    width: 26%;
-  }
-  
-  /*fin estilos sección personajes*/
-  
-  /*inicio estilos sección ver imágenes*/
-  .ver-serie img {
-    width: 529px;
-    margin: 16px 17px 30px 0;  
-  }
-  .ver-serie h2 {
-    font-size: 30px;
-  }
-  
-  /*fin estilos sección ver imagenes*/
-  
-  /*inicio estilos sección biografía*/
-  
-  .container-biografia {
-    width: 91%;
-  }
-  /*fin estilos sección biografía*/
-  
-  footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color:rgba(0, 0, 0, 0.623);
-    width: 92%;
-    margin: 10px 21px 29px 28px;
-    padding: 17px 16px 22px 80px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
-  
-  footer ul li {
-    color: white;
-    margin: 0px -5px 4px -42px;
-    font-family: Arial black, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: bolder;
-    /* -webkit-text-stroke: 0.5px black; */
-  }
-  
-  footer ul li a {
-    color: white;
-    font-family: Arial black, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bolder;
-    /* -webkit-text-stroke: 0.5px black; */
-    text-decoration: none;
-  }
-  
-  footer img{
-   margin: 19px 26px 16px 31px
-  }  
-  }
 
-@media(max-width:630px){
 
-} 
 
 @media(max-width:440px){
 /*inicio de estilos del header*/
@@ -433,14 +305,13 @@ margin: 0 0 0 -61px;
   padding: 66px 66px 66px 66px;
 }
 
-.primer-div {
-  display: flex;
-  position: absolute;
-  left: 8px;
-  order: 1;
+.primer-div img {
+  margin: -29px 0 0 19px;
+  width: 91px;
 }  
     
 .primer-div img {
+  margin: -29px 0 0 13px;
   width: 87px;
 }
 
@@ -450,29 +321,42 @@ margin: 0 0 0 -61px;
   right: 10px;
   order: 2;
 }
-.segundo-div img{
-  width:161px;
+.segundo-div img {
+  margin: -14px 71px 0 0;
+  width: 202px;
+}
 }
     
 nav{
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
   left: 17%;
+  margin: 93px 0 0 -38px;
 }    
       
 nav ul{
-  flex-direction: column;
-  margin-left: 10px;
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 10px;
+  
   }
 
+nav ul li{
+  text-align: center ;
+}
+
 nav ul li a{
-  
-  font-size: 12px;
-  
-} 
+    color:rgb(0, 81, 255) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    /*-webkit-text-stroke: 0.5px black;*/
+    text-decoration: none;
+     margin: 0 0px 0 12px;
+    padding: 2px;
+  } 
+
+
 /*fin de estilos del header*/
 /*inicio sección estilos sinopsis*/
 .sinopsis{

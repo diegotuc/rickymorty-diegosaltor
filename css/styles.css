@@ -298,6 +298,111 @@ background-color: white;
 /*fin de estilos para sección footer*/
 
 
+@media(max-width:880px){
+  /*inicio header*/  
+  .contenedor {
+    animation: gradiente 5s ease-in-out infinite;
+    background: linear-gradient(-45deg, rgba(170, 255, 0, 0.918), rgba(36, 153, 221, 0.301), rgba(0, 89, 255, 0.664));
+    background-size: 350%;
+    background-color: rgb(170, 255, 0);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 21px 0;
+    padding: 34px;
+}
+
+.primer-div img {
+  width: 141px;
+  margin: -66px 0 0 98px;
+}
+
+.segundo-div img {
+  width: 367px;
+  margin: -51px 176px 0 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 137px 0 0 -5px;
+}
+
+nav ul li a {
+  color: rgb(0, 81, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  /* -webkit-text-stroke: 0.5px black; */
+  text-decoration: none;
+  margin: 0 14px 0 0px;
+  padding: 10px;
+}
+/*fin header*/
+
+/*inicio seccion sinopsis*/
+.fondo {
+  background-color: rgba(255, 255, 0, 0.781);
+  padding: 24px 5px 5px 3px;
+  width: 90%;
+  margin: 10px 23px 23px -22px;
+}
+/*fin seccion sinopsis*/
+
+/*inicio seccion personajes*/
+.h2-personajes {
+  color: rgb(252, 193, 0);
+  text-shadow: 1px 1px 2px black;
+  background-color: rgba(165, 247, 2, 0.548);
+  margin: 10px 21px 26px 219px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 52%;
+  text-align: center;
+  font-size: 30px;  
+}
+
+.grid-item {
+  background-color: rgba(165, 247, 2, 0.548);
+  margin: 10px 21px 5px 21px;
+  padding: 20px;
+  text-align: center;
+  width: 27%;
+  border-radius: 10%;
+  border: 2px solid black;
+}
+/*fin seccion personajes*/
+
+/*inicio seccion biografía*/
+.container-biografia {
+  color: white;
+  background-color: rgba(1, 74, 28, 0.726);
+  margin-left: 21px;
+  width: 85%;
+  padding: 24px;
+  margin: 0 0 0 66px;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  display: flex;
+}
+
+.container-biografia {
+  color: white;
+  background-color: rgba(1, 74, 28, 0.726);
+  margin-left: 21px;
+  width: 85%;
+  padding: 24px;
+  margin: 0 0 0 66px;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  display: flex;
+}
+
+/*fin seccion biografía*/
+
+
+}
 
 
 @media(max-width:440px){

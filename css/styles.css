@@ -311,7 +311,7 @@ background-color: white;
 }  
     
 .primer-div img {
-  margin: -29px 0 0 13px;
+  margin: -29px 0 0 -21px;
   width: 87px;
 }
 
@@ -322,16 +322,16 @@ background-color: white;
   order: 2;
 }
 .segundo-div img {
-  margin: -14px 71px 0 0;
+  margin: -14px 42px 0 0;
   width: 202px;
 }
-}
+
     
 nav{
   display: flex;
   flex-wrap: wrap;
   left: 17%;
-  margin: 93px 0 0 -38px;
+  margin: 93px 0 0 -48px;
 }    
       
 nav ul{
@@ -352,7 +352,7 @@ nav ul li a{
     font-weight: bolder;
     /*-webkit-text-stroke: 0.5px black;*/
     text-decoration: none;
-     margin: 0 0px 0 12px;
+     margin: 0 0px 0 4px;
     padding: 2px;
   } 
 

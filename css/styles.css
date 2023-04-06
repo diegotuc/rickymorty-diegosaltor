@@ -61,9 +61,11 @@ order: 2;
 .segundo-div img{
 width:337px;
 }
-nav{
-position: absolute;
-left: 20%;
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  left: 17%;
+  margin: 2px 0 0 -175px;
 }
 nav ul{
 display: flex;
@@ -74,7 +76,7 @@ list-style: none;
 nav ul li a{
 color:rgb(0, 81, 255) ;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 21px;
+font-size: 25px;
 font-weight: bolder;
 /*-webkit-text-stroke: 0.5px black;*/
 text-decoration: none;

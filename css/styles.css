@@ -46,11 +46,11 @@ padding: 66px;
 .primer-div {
 display: flex;
 position: absolute;
-left: 73px;
+left: 35px;
 order: 1;
 }
 .primer-div img{
-width: 114px;
+width: 108px;
 }
 .segundo-div {
 display: flex;
@@ -59,13 +59,13 @@ right: 24px;
 order: 2;
 }
 .segundo-div img{
-width:337px;
+width:250px;
 }
 nav {
   display: flex;
   flex-wrap: wrap;
   left: 17%;
-  margin: 2px 0 0 -175px;
+  margin: 2px 0 0 -139px;
 }
 nav ul{
 display: flex;
@@ -76,12 +76,12 @@ list-style: none;
 nav ul li a{
 color:rgb(0, 81, 255) ;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
+font-size: 16px;
 font-weight: bolder;
 /*-webkit-text-stroke: 0.5px black;*/
 text-decoration: none;
-margin: 10px;
-padding: 10px;
+margin:7px;
+padding:0;
 }
 nav ul li a:hover{
 color:white;
@@ -96,7 +96,7 @@ color:black;
 /*comienzo sección sinopsis */
 .sinopsis{
 display: flex;
-width: 97%;
+width: 95%;
 justify-content: center;
 align-items: center;
 margin: 0px 21px 21px 21px;
@@ -123,68 +123,83 @@ font-weight: bolder;
 }
 /*fin sección sinopsis */
 
-/*comienzo sección personajes*/
+/*inicio sección personajes*/
 .personajes{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.h2-personajes{
-color: rgb(252, 193, 0);
-text-shadow: 1px 1px 2px black;
-background-color:  rgba(165, 247, 2, 0.548);
-margin: 10px 21px 26px 314px;
-padding: 20px;
-border-radius: 10px;
-width: 52%;
-text-align: center;
-font-size: 30px;
-}
-.container-personajes{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-margin: 0px 21px 0px 21px;
-}
-/*fin de estilos para sección sinópsis*/
-
-/*inicio de estilos para sección personajes*/
-
-/*en la clase .grid-items se establece el tamaño y color del fondo del espacio donde irá la imagen y la información de los personajes de la serie de rick y morty*/
-.grid-item{    
-background-color:  rgba(165, 247, 2, 0.548);
-margin: 10px 21px 5px 21px;
-padding: 20px;
-text-align: center;
-width: 15%;
-border-radius: 10%;
-border: 2px solid black;
-}
-.grid-item img{
-width: 120px;
-border-radius: 50%;
-}
-.grid-item h3{
-color: rgb(252, 193, 0);
-/* fuente de información:https://developer.mozilla.org/es/docs/Web/CSS/text-shadow*/
-
-/*sintaxsis: text-shadow: offset-x | offset-y | blur-radius | color */
-text-shadow: 1px 1px 2px black;
-}
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .h2-personajes{
+  color: rgb(252, 193, 0);
+  text-shadow: 1px 1px 2px black;
+  background-color:  rgba(165, 247, 2, 0.548);
+  margin: 10px 21px 26px 209px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 52%;
+  text-align: center;
+  font-size: 30px;
+  }
+  .container-personajes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 21px 0px 21px;
+  }
+ 
   
-.grid-item p{
-color: rgb(252, 193, 0);
-text-shadow: 1px 1px 2px black;
-font-family: Arial black, Helvetica, sans-serif;
-font-size: 15;
-font-weight: bolder;
-}
+  /*en la clase .card se establece el tamaño y color del fondo del espacio donde irá la imagen y la información de los personajes de la serie de rick y morty*/
+ 
+  .parrafo-personajes{
+  color: rgb(252, 193, 0);
+  text-shadow: 1px 1px 2px black;
+  font-family: Arial black, Helvetica, sans-serif;
+  font-size: 15;
+  font-weight: bolder;
+  }  
+  .card {
+    width: 194px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color:  rgba(165, 247, 2, 0.548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+}  
+  .card .character-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+  }
   
-.grid-item span{
-text-shadow: 1px 1px 2px black;
-color: white;
-font-family: Arial black, Helvetica, sans-serif;
-font-size: 15;
-font-weight: bolder;
-}
+  .card .character-image {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  
+  .character-info h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    color: rgb(252, 193, 0);
+  /* fuente de información:https://developer.mozilla.org/es/docs/Web/CSS/text-shadow*/
+  
+  /*sintaxsis: text-shadow: offset-x | offset-y | blur-radius | color */
+  text-shadow: 1px 1px 2px black;
+  }
+  
+  .card:hover {
+    /*background-color: #ffee0052;*/
+    box-shadow: 1px 0px 19px 1px rgba(255, 187, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 19px 1px rgba(255, 187, 0, 0.75);
+  -moz-box-shadow: 1px 0px 19px 1px rgba(255, 187, 0, 0.75);
+  }
+
 
 /*fin de estilos para sección personajes*/
 
@@ -230,7 +245,7 @@ border: 6px solid white;
 color: white;
 background-color:rgba(1, 74, 28, 0.726);
 margin-left: 21px;
-width: 97%;
+width: 95.5%;
 padding: 24px;
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -315,18 +330,18 @@ background-color: white;
 
 .primer-div img {
   width: 141px;
-  margin: -66px 0 0 29px;
+  margin: -53px 0 0 179px;
 }
 
 .segundo-div img {
-  width: 367px;
-  margin: -51px 124px 0 0;
+  width: 415px;
+  margin: -33px 113px 0 0;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  margin: 137px 0 0 -5px;
+  margin: 142px 0 -20px 30px;
 }
 
 nav ul li a {
@@ -342,11 +357,13 @@ nav ul li a {
 /*fin header*/
 
 /*inicio seccion sinopsis*/
+
+
 .fondo {
   background-color: rgba(255, 255, 0, 0.781);
   padding: 24px 5px 5px 3px;
   width: 90%;
-  margin: 10px 23px 23px -22px;
+  margin: 10px 23px 23px 20px;
 }
 /*fin seccion sinopsis*/
 
@@ -408,18 +425,14 @@ nav ul li a {
 @media(max-width:440px){
 /*inicio de estilos del header*/
 .contenedor {
-  margin: 0px 0px 20px 0;
+  margin: 0 -28px 20px 0;
   padding: 15px;
 }
 
-.primer-div img {
-  margin: -29px 0 0 19px;
-  width: 91px;
-}  
     
 .primer-div img {
-  margin: -29px 0 0 -21px;
-  width: 87px;
+  margin: -29px 0 0 57px;
+  width: 100px;
 }
 
 .segundo-div {
@@ -429,16 +442,15 @@ nav ul li a {
   order: 2;
 }
 .segundo-div img {
-  margin: -14px 42px 0 0;
-  width: 202px;
+  margin: -14px 24px 0 0;
+    width: 227px;
 }
+
 
     
 nav{
-  display: flex;
-  flex-wrap: wrap;
-  left: 17%;
-  margin: 93px 0 0 2px;
+ 
+  margin: 99px 0 -10px 2px;
 }    
       
 nav ul{
@@ -455,11 +467,11 @@ nav ul li{
 nav ul li a{
     color:rgb(0, 81, 255) ;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bolder;
     /*-webkit-text-stroke: 0.5px black;*/
     text-decoration: none;
-     margin: 0 0px 0 4px;
+     margin: 0 0px 0 5px;
     padding: 2px;
   } 
 
@@ -486,9 +498,7 @@ nav ul li a{
   padding: 16px 16px 16px 16px;
   width: 69%;
 }
-.grid-item {
-  width: 65%;
-}
+
 
 /*fin estilos sección personajes*/
 

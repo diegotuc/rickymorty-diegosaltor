@@ -194,7 +194,7 @@ font-weight: bolder;
   }
   
   .card:hover {
-    /*background-color: #ffee0052;*/
+    
     box-shadow: 1px 0px 19px 1px rgba(255, 187, 0, 0.75);
   -webkit-box-shadow: 1px 0px 19px 1px rgba(255, 187, 0, 0.75);
   -moz-box-shadow: 1px 0px 19px 1px rgba(255, 187, 0, 0.75);
@@ -427,11 +427,12 @@ nav ul li a {
 .contenedor {
   margin: 0 -28px 20px 0;
   padding: 15px;
+  width:108%;
 }
 
     
 .primer-div img {
-  margin: -29px 0 0 57px;
+  margin: -29px 0 0 -8px;
   width: 100px;
 }
 
@@ -450,7 +451,7 @@ nav ul li a {
     
 nav{
  
-  margin: 99px 0 -10px 2px;
+  margin: 99px 0 -10px -34px;
 }    
       
 nav ul{
@@ -467,7 +468,7 @@ nav ul li{
 nav ul li a{
     color:rgb(0, 81, 255) ;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bolder;
     /*-webkit-text-stroke: 0.5px black;*/
     text-decoration: none;
@@ -494,9 +495,12 @@ nav ul li a{
 
 /*inicio estilos sección personajes*/
 .h2-personajes {
-  margin: 10px 21px 13px 63px;
+  margin: 10px 21px 13px 69px;
   padding: 16px 16px 16px 16px;
   width: 69%;
+}
+.container-personajes{
+  margin:0px 21px 0px 19px
 }
 
 
@@ -518,6 +522,7 @@ nav ul li a{
 
 .container-biografia {
   width: 91%;
+  margin: 0 0 0 18px;
 }
 .texto {
    flex-wrap: wrap;
